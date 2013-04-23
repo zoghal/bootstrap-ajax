@@ -55,6 +55,7 @@
       url: url,
       type: method,
       dataType: 'json',
+	  headers: { 'X-Bootstrap-Ajax': true },  
       statusCode: {
         200: function(data) {
           processData(data, $this)
@@ -89,6 +90,7 @@
       dataType: 'json',
       cache: false,
       contentType: false,
+	  headers: { 'X-Bootstrap-Ajax': true },
       processData: false,
       statusCode: {
         200: function(data) {
